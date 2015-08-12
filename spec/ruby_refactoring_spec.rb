@@ -67,12 +67,6 @@ describe "RubyRefactoring" do
         steven.vet_checkup
       end
 
-      it 'takes the dog to the vet' do
-        steven.vet_checkup
-        expect(steven.dog.leash).to eq(true)
-        expect(steven.dog.plastic_bag).to eq(true)
-        expect(alfi.vet_checkup?(steven)).to eq(true)
-      end
     end
 
     describe '#prepare_items' do
